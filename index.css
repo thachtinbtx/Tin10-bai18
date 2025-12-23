@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Clean White Card Style */
+  .card-white {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  /* Scrollbar Hide */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  @apply antialiased bg-[#A9A9A9] text-black;
+}
+
+/* Base Typography for TV/Projector */
+h1, h2, h3 {
+  @apply font-bold tracking-tight;
+}
+
+p, li, span {
+  @apply leading-relaxed;
+}
