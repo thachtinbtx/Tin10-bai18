@@ -21,7 +21,7 @@ const Terminal: React.FC<TerminalProps> = ({ title = "Terminal", code, output })
                     <div className="w-3.5 h-3.5 rounded-full bg-green-500 shadow-sm" />
                 </div>
             </div>
-            <div className="p-6 md:p-8 font-mono text-sm md:text-lg leading-relaxed overflow-x-auto bg-[#1e1e1e]">
+            <div className="p-6 md:p-8 font-mono text-xs md:text-sm leading-relaxed overflow-x-auto bg-[#1e1e1e]">
                 <div className="text-blue-300 font-medium whitespace-pre-wrap">
                     {code}
                 </div>
